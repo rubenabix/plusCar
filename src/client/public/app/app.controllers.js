@@ -11,12 +11,13 @@
 
     var vm = this;
 
-    vm.title = 'Plus Cars';
+    vm.title = 'Plus Car';
 
     /////////////////
 
     function activate() {
-      console.log('Activate: ', 'MainController');
+      console.log('Activate: ', 'MainController!!!');
+      vm.isReady = true;
     }
 
     ////////////////

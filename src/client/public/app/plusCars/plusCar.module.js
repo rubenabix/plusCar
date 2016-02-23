@@ -2,7 +2,13 @@
   'use strict';
   angular
     .module('plusCar',
-      ['ui.bootstrap']);
+      [
+        'ngMaterial',
+        'ngMessages',
+        'ngMdIcons',
+
+        'ui.router'
+      ]);
 
   console.log('plusCars module ready');
 

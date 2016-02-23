@@ -4,7 +4,13 @@
   angular
     .module('app', [
 
+      'ngMaterial',
+      'ngMessages',
+      'ngMdIcons',
+
       'ui.router',
+      'ngAnimate',
+
       'plusCar'
 
     ]);

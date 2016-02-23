@@ -20,11 +20,20 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.4.8",
-    "angular-animate": "~1.4.8",
-    "angular-aria": "~1.4.8",
-    "angular-messages": "~1.4.8",
-    "angular-ui-router": "~0.2.15",
-    "angular-bootstrap": "^1.1.2"
+    "angular": "master",
+    "angular-animate": "master",
+    "angular-aria": "master",
+    "angular-messages": "master",
+    "angular-material-icons": "master",
+    "angular-ui-router": "master",
+    "angular-material": "~1.0.2",
+    "material-design-icons": "master",
+    "animate.css": "~3.5.1"
+  },
+  "resolutions": {
+    "angular": "1.5.0",
+    "angular-animate": "^1.4.8",
+    "angular-aria": "^1.4.8",
+    "angular-messages": "^1.4.8"
   }
 }
