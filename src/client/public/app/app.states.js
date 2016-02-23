@@ -7,15 +7,6 @@
 
   function configuration($stateProvider, $urlRouterProvider) {
 
-    $urlRouterProvider.otherwise('/home');
-
-    $stateProvider
-
-      .state('home', {
-        url: '/home',
-        template: 'Home'
-      })
-
   }
 
 })();

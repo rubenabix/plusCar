@@ -1,0 +1,14 @@
+div.bd-purple(layout="row", layout-wrap="")
+  md-card.gallery-card(flex="", ng-repeat="picture in [1,2,3,4,5,6,7,8,9]")
+    md-card-content.bd-blue(flex="")
+      h2
+        | {{mainController.title}}
+      p
+        | This is a card example
+    .md-actions(layout="row",
+    layout-align="end center")
+      md-button(ng-click="")
+        | button 1
+      md-button
+        | button 2
+
