@@ -1,5 +1,27 @@
-div.bd-purple(layout="row", layout-wrap="")
-  md-card.gallery-card(flex="", ng-repeat="picture in [1,2,3,4,5,6,7,8,9]")
+div.bd-purple(layout="row", layout-wrap="", layout-padding ="", layout-margin ="")
+  md-card.gallery-card(flex="", ng-repeat="car in galleryController.cars")
+    md-card-header
+      md-card-header-text
+        span.md-title User
+        span.md-subhead subhead
+    img.md-card-image(ng-src='{{::"./../images/cars/volvo-1.jpg"}}')
+    md-card-title
+      md-card-title-text
+        span.md-headline In-card mixed actions
+        span.md-subhead Reversed
+    md-card-actions.layout-align-start-center.layout-row(layout='row', layout-align='start center')
+      button.md-button(type='button')
+        span Comparar
+      button.md-button(type='button', ng-click="galleryController.showDetails(car)")
+        span Detalles
+      md-card-icon-actions
+        button.md-icon-button.md-button(type='button', aria-label='toggle', ng-click="car.showDescription = !car.showDescription")
+          md-icon(md-svg-icon="{{car.showDescription ? 'navigation:ic_expand_less_24px' : 'navigation:ic_expand_more_24px'}}", aria-hidden='true')
+    md-card-content
+      p(ng-show="car.showDescription")
+        | {{car.description}}
+
+  //md-card.gallery-card(flex="", ng-repeat="car in galleryController.cars")
     md-card-header
       md-card-header-text
         span.md-title Title
@@ -14,8 +36,10 @@ div.bd-purple(layout="row", layout-wrap="")
       md-button Action 2
     md-card-content
       p
-        | The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-        | two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        | {{car.description}}
+
+
+
   //md-card.gallery-card(flex="", ng-repeat="picture in [1,2,3,4,5,6,7,8,9]")
     md-card-content.bd-blue(flex="")
       h2

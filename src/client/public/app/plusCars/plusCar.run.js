@@ -35,7 +35,7 @@
         };
     }($window));
 
-    const urls = [
+    var urls = [
 
       './../images/icons/svg-sprite-content.svg',
       './../images/icons/svg-sprite-navigation.svg',

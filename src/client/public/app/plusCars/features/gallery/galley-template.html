@@ -1,34 +1,28 @@
+<div layout="row" layout-wrap="" layout-padding="" layout-margin="" class="bd-purple"><md-card flex="" ng-repeat="car in galleryController.cars" class="gallery-card"><md-card-header><md-card-header-text><span class="md-title">User</span><span class="md-subhead">subhead</span></md-card-header-text></md-card-header><img ng-src="{{::&quot;./../images/cars/volvo-1.jpg&quot;}}" class="md-card-image"/><md-card-title><md-card-title-text><span class="md-headline">In-card mixed actions</span><span class="md-subhead">Reversed</span></md-card-title-text></md-card-title><md-card-actions layout="row" layout-align="start center" class="layout-align-start-center layout-row"><button type="button" class="md-button"><span>Comparar</span></button><button type="button" ng-click="galleryController.showDetails(car)" class="md-button"><span>Detalles</span></button><md-card-icon-actions><button type="button" aria-label="toggle" ng-click="car.showDescription = !car.showDescription" class="md-icon-button md-button"><md-icon md-svg-icon="{{car.showDescription ? 'navigation:ic_expand_less_24px' : 'navigation:ic_expand_more_24px'}}" aria-hidden="true"></md-icon></button></md-card-icon-actions></md-card-actions><md-card-content><p ng-show="car.showDescription">{{car.description}}</p></md-card-content></md-card><!--md-card.gallery-card(flex="", ng-repeat="car in galleryController.cars")md-card-header
+  md-card-header-text
+    span.md-title Title
+    span.md-subhead subhead
+img.md-card-image(ng-src='{{::"./../images/cars/volvo-1.jpg"}}', alt='Washed Out')
+md-card-title
+  md-card-title-text
+    span.md-headline In-card actions
+    span.md-subhead Description
+md-card-actions(layout='row', layout-align='start center')
+  md-button Action 1
+  md-button Action 2
+md-card-content
+  p
+    | {{car.description}}
 
-<div layout="row" layout-wrap="" class="bd-purple">
-  <md-card flex="" ng-repeat="picture in [1,2,3,4,5,6,7,8,9]" class="gallery-card">
-    <md-card-header>
-      <md-card-header-text><span class="md-title">Title</span><span class="md-subhead">subhead</span></md-card-header-text>
-    </md-card-header><img ng-src="{{::&quot;./../images/cars/volvo-1.jpg&quot;}}" alt="Washed Out" class="md-card-image"/>
-    <md-card-title>
-      <md-card-title-text><span class="md-headline">In-card actions</span><span class="md-subhead">Description</span></md-card-title-text>
-    </md-card-title>
-    <md-card-actions layout="row" layout-align="start center">
-      <md-button>Action 1</md-button>
-      <md-button>Action 2</md-button>
-    </md-card-actions>
-    <md-card-content>
-      <p>
-        The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-        two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-      </p>
-    </md-card-content>
-  </md-card>
-  <!--md-card.gallery-card(flex="", ng-repeat="picture in [1,2,3,4,5,6,7,8,9]")
-  md-card-content.bd-blue(flex="")
-    h2
-      | {{mainController.title}}
-    p
-      | This is a card example
-  .md-actions(layout="row",
-  layout-align="end center")
-    md-button(ng-click="")
-      | button 1
-    md-button
-      | button 2
-  -->
-</div>
+
+--><!--md-card.gallery-card(flex="", ng-repeat="picture in [1,2,3,4,5,6,7,8,9]")md-card-content.bd-blue(flex="")
+  h2
+    | {{mainController.title}}
+  p
+    | This is a card example
+.md-actions(layout="row",
+layout-align="end center")
+  md-button(ng-click="")
+    | button 1
+  md-button
+    | button 2--></div>

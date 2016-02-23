@@ -1,0 +1,17 @@
+md-dialog(aria-label="Ingresar")
+  form
+    md-toolbar
+      .md-toolbar-tools
+        h2 Detalles
+        span(flex="")
+        md-button.md-icon-button.top-button(aria-label="Cerrar", ng-click="detailsController.close('close')")
+          ng-md-icon(icon="close", size="24", options="{duration: 375}", style="fill: white")
+    div()
+
+      br
+      div(layout="row", layout-sm="column")
+
+    .md-dialog-actions(layout="row")
+      span(flex="")
+      md-button.md-primary(ng-click="detailsController.close('close')")
+        | Regresar

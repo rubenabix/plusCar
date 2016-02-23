@@ -3,21 +3,21 @@
 
   angular
     .module('plusCar')
-    .controller('CompareController', CompareController);
+    .controller('DetailsController', DetailsController);
 
-  CompareController.$inject = ['$scope', '$mdDialog'];
+  DetailsController.$inject = ['$scope', '$mdDialog'];
 
-  function CompareController($scope, $mdDialog) {
+  function DetailsController($scope, $mdDialog) {
 
     var vm = this;
     vm.close = closeModal;
 
     function activate() {
-      console.log('Activate: ', 'CompareController!!!');
+      console.log('Activate: ', 'DetailsController!!!');
     }
 
     $scope.$on('$destroy', function () {
-      console.log('$destroy: ', 'CompareController!!!');
+      console.log('$destroy: ', 'DetailsController!!!');
     });
 
     function closeModal() {

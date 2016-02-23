@@ -1,1 +1,65 @@
-<html lang="en" ng-app="app"><head><meta name="viewport" content="initial-scale=1"/><link rel="stylesheet" href="../../../../../bower_components/angular-material-icons/angular-material-icons.css" inline=""/><link rel="stylesheet" href="../../../../../bower_components/angular-material/angular-material.css" inline=""/><link rel="stylesheet" href="../../../../../bower_components/animate.css/animate.css" inline=""/><link rel="stylesheet" href="../css/fonts.css" inline=""/><link rel="stylesheet" href="../css/styles.css" inline=""/></head><body layout="column" ng-cloak="" ng-controller="MainController as mainController" layout-fill=""><md-toolbar layout="row" ng-show="::mainController.isReady" ng-cloak=""><div class="md-toolbar-tools"><h1 class="md-title">{{::mainController.title}}</h1><div layout="row" flex="" layout-align="end center"><md-menu layout="row" flex="" layout-align="end center" md-position-mode="target-right target" hide-gt-sm=""><md-button aria-label="Open demo menu" ng-click="$mdOpenMenu()" class="md-icon-button top-button"><md-icon md-menu-origin="" md-svg-icon="navigation:ic_more_vert_24px"></md-icon></md-button><md-menu-content width="3" ng-click=""><md-menu-item><md-button ng-click="mainController.showCompareForm($event)" class="md-primary"><div layout="row"><p flex="">Comparar&#160;</p><md-icon md-menu-origin="" md-svg-icon="image:ic_compare_24px"></md-icon></div></md-button></md-menu-item></md-menu-content></md-menu></div><div layout="row" layout-sm="column" flex="" layout-align="end center" hide-xs="" hide-sm=""><md-button ng-click="mainController.showCompareForm($event)" class="md-primary md-raised md-hue-2">Comparar</md-button></div></div></md-toolbar><div layout="row"><div class="main-container"><div ui-view=""></div></div></div><script src="../../../../../bower_components/angular/angular.js" inline=""></script><script src="../../../../../bower_components/angular-animate/angular-animate.js" inline=""></script><script src="../../../../../bower_components/angular-aria/angular-aria.js" inline=""></script><script src="../../../../../bower_components/angular-messages/angular-messages.js" inline=""></script><script src="../../../../../bower_components/angular-material-icons/angular-material-icons.min.js" inline=""></script><script src="../../../../../bower_components/angular-ui-router/release/angular-ui-router.js" inline=""></script><script src="../../../../../bower_components/angular-material/angular-material.js" inline=""></script><script src="../app/plusCars/plusCar.module.js" inline=""></script><script src="../app/plusCars/features/gallery/compare/compare.controller.js" inline=""></script><script src="../app/plusCars/features/gallery/gallery.controller.js" inline=""></script><script src="../app/app.module.js" inline=""></script><script src="../app/plusCars/plusCar.states.js" inline=""></script><script src="../app/plusCars/plusCar.run.js" inline=""></script><script src="../app/plusCars/plusCar.constants.js" inline=""></script><script src="../app/plusCars/plusCar.config.js" inline=""></script><script src="../app/app.states.js" inline=""></script><script src="../app/app.services.js" inline=""></script><script src="../app/app.run.js" inline=""></script><script src="../app/app.controllers.js" inline=""></script><script src="../app/app.config.js" inline=""></script></body></html>
+
+<html lang="en" ng-app="app">
+  <head>
+    <meta name="viewport" content="initial-scale=1"/>
+    <link rel="stylesheet" href="../../../../../bower_components/angular-material-icons/angular-material-icons.css" inline=""/>
+    <link rel="stylesheet" href="../../../../../bower_components/angular-material/angular-material.css" inline=""/>
+    <link rel="stylesheet" href="../../../../../bower_components/animate.css/animate.css" inline=""/>
+    <link rel="stylesheet" href="../css/fonts.css" inline=""/>
+    <link rel="stylesheet" href="../css/styles.css" inline=""/>
+  </head>
+  <body layout="column" ng-cloak="" ng-controller="MainController as mainController" layout-fill="">
+    <md-toolbar layout="row" ng-show="::mainController.isReady" ng-cloak="">
+      <div class="md-toolbar-tools">
+        <h1 class="md-title">{{::mainController.title}}</h1>
+        <div layout="row" flex="" layout-align="end center">
+          <md-menu layout="row" flex="" layout-align="end center" md-position-mode="target-right target" hide-gt-sm="">
+            <md-button aria-label="Open demo menu" ng-click="$mdOpenMenu()" class="md-icon-button top-button">
+              <md-icon md-menu-origin="" md-svg-icon="navigation:ic_more_vert_24px"></md-icon>
+            </md-button>
+            <md-menu-content width="3" ng-click="">
+              <md-menu-item>
+                <md-button ng-click="mainController.showCompareForm($event)" class="md-primary">
+                  <div layout="row">
+                    <p flex="">Comparar&#160;</p>
+                    <md-icon md-menu-origin="" md-svg-icon="image:ic_compare_24px"></md-icon>
+                  </div>
+                </md-button>
+              </md-menu-item>
+            </md-menu-content>
+          </md-menu>
+        </div>
+        <div layout="row" layout-sm="column" flex="" layout-align="end center" hide-xs="" hide-sm="">
+          <md-button ng-click="mainController.showCompareForm($event)" class="md-primary md-raised md-hue-2">Comparar</md-button>
+        </div>
+      </div>
+    </md-toolbar>
+    <div layout="row">
+      <div class="main-container">
+        <div ui-view=""></div>
+      </div>
+    </div>
+    <script src="../../../../../bower_components/angular/angular.js" inline=""></script>
+    <script src="../../../../../bower_components/angular-animate/angular-animate.js" inline=""></script>
+    <script src="../../../../../bower_components/angular-aria/angular-aria.js" inline=""></script>
+    <script src="../../../../../bower_components/angular-messages/angular-messages.js" inline=""></script>
+    <script src="../../../../../bower_components/angular-material-icons/angular-material-icons.min.js" inline=""></script>
+    <script src="../../../../../bower_components/angular-ui-router/release/angular-ui-router.js" inline=""></script>
+    <script src="../../../../../bower_components/angular-material/angular-material.js" inline=""></script>
+    <script src="../app/plusCars/plusCar.module.js" inline=""></script>
+    <script src="../app/plusCars/features/gallery/compare/compare.controller.js" inline=""></script>
+    <script src="../app/plusCars/features/gallery/gallery.factory.js" inline=""></script>
+    <script src="../app/plusCars/features/gallery/gallery.controller.js" inline=""></script>
+    <script src="../app/plusCars/features/gallery/details.controller.js" inline=""></script>
+    <script src="../app/app.module.js" inline=""></script>
+    <script src="../app/plusCars/plusCar.states.js" inline=""></script>
+    <script src="../app/plusCars/plusCar.run.js" inline=""></script>
+    <script src="../app/plusCars/plusCar.constants.js" inline=""></script>
+    <script src="../app/plusCars/plusCar.config.js" inline=""></script>
+    <script src="../app/app.states.js" inline=""></script>
+    <script src="../app/app.services.js" inline=""></script>
+    <script src="../app/app.run.js" inline=""></script>
+    <script src="../app/app.controllers.js" inline=""></script>
+    <script src="../app/app.config.js" inline=""></script>
+  </body>
+</html>
