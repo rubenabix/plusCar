@@ -1,0 +1,25 @@
+.md-toolbar-tools h1 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: inherit;
+}
+
+md-sidenav.md-locked-open {
+  width: 150px !important;
+  min-width: 150px !important;
+  max-width: 150px !important;
+}
+
+/*TODO: remove*/
+/*.card-media {*/
+  /*background-color: #999999;*/
+/*}*/
+
+/*TODO: add constant*/
+.bitcoin-date {
+  color: #7C4DFF;
+}
+
+.monitor-view {
+  max-height: 650px;
+}

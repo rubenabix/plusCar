@@ -1,0 +1,43 @@
+{
+  "name": "admin",
+  "version": "0.0.1",
+  "description": "Admin Demo",
+  "main": "\"\"",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/rubenabix/admindemo.git"
+  },
+  "keywords": [
+    "Angular",
+    "Material",
+    "Admin"
+  ],
+  "author": "Heritage Sports",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/rubenabix/admindemo#readme",
+  "devDependencies": {
+    "colors": "^1.1.2",
+    "del": "^2.1.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-angular-filesort": "^1.1.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-hub": "^0.7.1",
+    "gulp-if": "^2.0.0",
+    "gulp-inject": "^3.0.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-jscs": "^3.0.2",
+    "gulp-jshint": "^2.0.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-minify": "0.0.5",
+    "gulp-print": "^2.0.1",
+    "jscs": "^2.6.0",
+    "jshint": "^2.8.0",
+    "jshint-stylish": "^2.1.0",
+    "path": "^0.12.7",
+    "wiredep": "^2.2.2",
+    "yargs": "^3.30.0"
+  }
+}

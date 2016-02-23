@@ -1,0 +1,10 @@
+html(lang="en", ng-app="app")
+  include main/head
+  body(ng-cloak="", ng-controller="MainController as mainController")
+    .container-fluid
+      .row
+        .col-md-12
+          include main/toolbar
+          include main/sidenav
+          include main/content
+    include main/scripts
