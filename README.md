@@ -21,7 +21,12 @@ Open the browser with: ``http://localhost:8080/src/client/public/templates/#/gal
 
 Install nodejs >= 5.x
 
-``npm install -g gulpjs/gulp-cli#4.0 bower``
-``npm install``
-``bower install``
-``gulp``
+```
+npm install -g gulpjs/gulp-cli#4.0 bower
+
+npm install
+
+bower install
+
+gulp
+```
