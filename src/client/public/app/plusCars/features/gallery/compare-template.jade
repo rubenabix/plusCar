@@ -1,0 +1,30 @@
+md-dialog(aria-label="Ingresar")
+  form
+    md-toolbar
+      .md-toolbar-tools
+        h2 Comparar
+        span(flex="")
+        md-button.md-icon-button.top-button(aria-label="Cerrar", ng-click="compareController.close('close')")
+          ng-md-icon(icon="close", size="24", options="{duration: 375}", style="fill: white")
+    div()
+
+      br
+      div(layout="column")
+        div(layout="row")
+          table
+            thead
+            tbody
+              tr(ng-repeat="detail in compareController.cars[0].details")
+                td() {{detail.label}}
+                td() {{detail.content}}
+        .md-padding
+          h3.md-title Modelos seleccionados.
+          md-chips
+            md-chip Volvo
+            md-chip Peugeot
+            md-chip Toyota
+
+    .md-dialog-actions(layout="row")
+      span(flex="")
+      md-button.md-primary(ng-click="compareController.close('close')")
+        | Regresar

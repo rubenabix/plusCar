@@ -15,6 +15,7 @@
         .iconSet('alert', './../images/icons/svg-sprite-alert.svg', 24)
         .iconSet('action', './../images/icons/svg-sprite-action.svg', 24)
         .iconSet('editor', './../images/icons/svg-sprite-editor.svg', 24)
+        .iconSet('image', './../images/icons/svg-sprite-image.svg', 24)
         .defaultIconSet('./../images/icons/svg-sprite-alert.svg', 24);
     }
 
