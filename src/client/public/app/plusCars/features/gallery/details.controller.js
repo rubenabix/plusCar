@@ -5,15 +5,16 @@
     .module('plusCar')
     .controller('DetailsController', DetailsController);
 
-  DetailsController.$inject = ['$scope', '$mdDialog'];
+  DetailsController.$inject = ['$scope', '$mdDialog', 'car'];
 
-  function DetailsController($scope, $mdDialog) {
+  function DetailsController($scope, $mdDialog, car) {
 
     var vm = this;
     vm.close = closeModal;
 
     function activate() {
       console.log('Activate: ', 'DetailsController!!!');
+      vm.car = car;
     }
 
     $scope.$on('$destroy', function () {

@@ -14,14 +14,16 @@
     vm.title = 'Plus Car';
     vm.showCompareForm = showCompareForm;
 
-    function showCompareForm(event) {
+    function showCompareForm(cars) {
       console.log('showCompareForm');
+      console.log(cars);
       $mdDialog.show({
           controller: 'CompareController as compareController',
           templateUrl: './../app/plusCars/features/gallery/compare-template.html',
-          parent: angular.element(document.body),
-          targetEvent: event,
-          clickOutsideToClose: true
+          clickOutsideToClose: true,
+          locals: {
+            cars: cars
+          }
         })
         .then(function (answer) {
           console.log('You said the information was "' + answer + '".');

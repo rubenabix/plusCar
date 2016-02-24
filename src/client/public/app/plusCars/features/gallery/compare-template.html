@@ -1,1 +1,39 @@
-<md-dialog aria-label="Ingresar"><form><md-toolbar><div class="md-toolbar-tools"><h2>Comparar</h2><span flex=""></span><md-button aria-label="Cerrar" ng-click="compareController.close('close')" class="md-icon-button top-button"><ng-md-icon icon="close" size="24" options="{duration: 375}" style="fill: white"></ng-md-icon></md-button></div></md-toolbar><div><br/><div layout="row" layout-sm="column"></div></div><div layout="row" class="md-dialog-actions"><span flex=""></span><md-button ng-click="compareController.close('close')" class="md-primary">Regresar</md-button></div></form></md-dialog>
+
+<md-dialog aria-label="Ingresar">
+  <form>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Comparar</h2><span flex=""></span>
+        <md-button aria-label="Cerrar" ng-click="compareController.close('close')" class="md-icon-button top-button">
+          <ng-md-icon icon="close" size="24" options="{duration: 375}" style="fill: white"></ng-md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+    <div><br/>
+      <div layout="column">
+        <div layout="row">
+          <table>
+            <thead></thead>
+            <tbody>
+              <tr ng-repeat="detail in compareController.cars[0].details">
+                <td>{{detail.label}}</td>
+                <td>{{detail.content}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="md-padding">
+          <h3 class="md-title">Modelos seleccionados.</h3>
+          <md-chips>
+            <md-chip>Volvo</md-chip>
+            <md-chip>Peugeot</md-chip>
+            <md-chip>Toyota</md-chip>
+          </md-chips>
+        </div>
+      </div>
+    </div>
+    <div layout="row" class="md-dialog-actions"><span flex=""></span>
+      <md-button ng-click="compareController.close('close')" class="md-primary">Regresar</md-button>
+    </div>
+  </form>
+</md-dialog>

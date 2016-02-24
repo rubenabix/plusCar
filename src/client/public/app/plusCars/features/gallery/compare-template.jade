@@ -9,7 +9,20 @@ md-dialog(aria-label="Ingresar")
     div()
 
       br
-      div(layout="row", layout-sm="column")
+      div(layout="column")
+        div(layout="row")
+          table
+            thead
+            tbody
+              tr(ng-repeat="detail in compareController.cars[0].details")
+                td() {{detail.label}}
+                td() {{detail.content}}
+        .md-padding
+          h3.md-title Modelos seleccionados.
+          md-chips
+            md-chip Volvo
+            md-chip Peugeot
+            md-chip Toyota
 
     .md-dialog-actions(layout="row")
       span(flex="")

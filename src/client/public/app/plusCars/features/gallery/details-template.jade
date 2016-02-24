@@ -10,6 +10,14 @@ md-dialog(aria-label="Ingresar")
 
       br
       div(layout="row", layout-sm="column")
+        table
+          thead
+          tbody
+            tr(ng-repeat="detail in detailsController.car.details")
+              td() {{detail.label}}
+              td() {{detail.content}}
+
+
 
     .md-dialog-actions(layout="row")
       span(flex="")

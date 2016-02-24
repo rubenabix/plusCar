@@ -25,12 +25,15 @@
         });
     }
 
-    function showDetails(event) {
-      console.log('showDetails');
+    function showDetails(car) {
+      console.log('showDetails', car);
       $mdDialog.show({
           controller: 'DetailsController as detailsController',
           templateUrl: './../app/plusCars/features/gallery/details-template.html',
-          clickOutsideToClose: true
+          clickOutsideToClose: true,
+          locals: {
+            car: car
+          }
         })
         .then(function (answer) {
           console.log('You said the information was "' + answer + '".');
