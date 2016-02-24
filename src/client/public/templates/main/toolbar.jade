@@ -2,17 +2,17 @@ md-toolbar(layout="row", ng-show="::mainController.isReady", ng-cloak="")
   .md-toolbar-tools
     h1.md-title {{::mainController.title}}
     div(layout="row", flex ="", layout-align="end center")
-      md-menu(layout="row", flex ="", layout-align="end center", md-position-mode="target-right target", hide-gt-sm="")
+      //md-menu(layout="row", flex ="", layout-align="end center", md-position-mode="target-right target", hide-gt-sm="")
         md-button.md-icon-button.top-button(aria-label="Open demo menu", ng-click="$mdOpenMenu()")
           md-icon(md-menu-origin = "", md-svg-icon="navigation:ic_more_vert_24px")
         md-menu-content(width="3", ng-click="")
           md-menu-item()
             md-button.md-primary(ng-click="mainController.showCompareForm($event)")
               div(layout="row")
-                p(flex="") Comparar&#160;
-                md-icon(md-menu-origin = "", md-svg-icon="image:ic_compare_24px")
+                //p(flex="") Comparar&#160;
+                //md-icon(md-menu-origin = "", md-svg-icon="image:ic_compare_24px")
 
 
     div(layout="row", layout-sm="column", flex ="", layout-align="end center", hide-xs = "", hide-sm = "")
-      md-button.md-primary.md-raised.md-hue-2(ng-click="mainController.showCompareForm($event)")
+      //md-button.md-primary.md-raised.md-hue-2(ng-click="mainController.showCompareForm($event)")
         | Comparar
